@@ -1,0 +1,43 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/chasedunagan/projects/dokkan/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1493504567
+  }
+}
