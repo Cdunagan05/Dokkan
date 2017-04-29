@@ -5,6 +5,18 @@
         1,
         null
       ],
+      "/Users/chasedunagan/projects/dokkan/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/chasedunagan/projects/dokkan/app/channels/application_cable/channel.rb": [
         0,
         0,
@@ -13,11 +25,6 @@
       ],
       "/Users/chasedunagan/projects/dokkan/app/channels/application_cable/connection.rb": [
         0,
-        0,
-        0,
-        0
-      ],
-      "/Users/chasedunagan/projects/dokkan/app/controllers/application_controller.rb": [
         0,
         0,
         0
@@ -38,6 +45,6 @@
         0
       ]
     },
-    "timestamp": 1493505143
+    "timestamp": 1493509311
   }
 }

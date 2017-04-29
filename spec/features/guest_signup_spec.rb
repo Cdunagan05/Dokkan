@@ -5,7 +5,7 @@ RSpec.describe 'As a guest' do
     it 'I can sign up for an account' do
       visit root_path
 
-      expect(page).to have_content("Create an Account!")
+      expect(page).to have_css("#signup", :visible => "Create an Account!")
 
       click_on "Create an Account!"
 
