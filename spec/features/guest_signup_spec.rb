@@ -22,7 +22,7 @@ RSpec.describe 'As a guest' do
       expect(page).to have_content("Welcome to Dokkan, Cdun!")
     end
 
-    it "cannot sign in if email is already taken" do
+    it "cannot signup if email is already taken" do
       User.create(username: "cdunagan", email: "texas@gmail.com", password: "texas")
       visit root_path
 
@@ -30,6 +30,20 @@ RSpec.describe 'As a guest' do
 
       fill_in "user_username", with: "Myname"
       fill_in "user_email", with: "texas@gmail.com"
+      fill_in "user_password", with: "texas"
+      fill_in "user_password_confirmation", with: "texas"
+
+      expect(current_path).to eq(signup_path)
+    end
+
+    it "cannot signup if username is already taken" do
+      User.create(username: "cdunagan", email: "texas@gmail.com", password: "texas")
+      visit root_path
+
+      click_on "Create an Account!"
+
+      fill_in "user_username", with: "cdunagan"
+      fill_in "user_email", with: "texasexes@gmail.com"
       fill_in "user_password", with: "texas"
       fill_in "user_password_confirmation", with: "texas"
 

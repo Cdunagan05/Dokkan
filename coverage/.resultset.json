@@ -19,14 +19,14 @@
         1,
         null,
         1,
-        4,
+        5,
         null,
         null
       ],
       "/Users/chasedunagan/projects/dokkan/app/controllers/users_controller.rb": [
         1,
         1,
-        2,
+        3,
         null,
         null,
         1,
@@ -89,6 +89,6 @@
         0
       ]
     },
-    "timestamp": 1493578391
+    "timestamp": 1493578494
   }
 }
