@@ -15,35 +15,89 @@
  */
 
  .signup {
-   background-color: brown; /* Green */
-   border-radius: 50%;
+   /*background-color: brown;*/
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 29px;
+  -webkit-box-shadow: 0px 0px 30px #cf8121;
+  -moz-box-shadow: 0px 0px 30px #cf8121;
+  box-shadow: 0px 0px 30px #cf8121;
+  font-family: Arial;
+  color: #ffffff;
+  background: #c28100;
+
+
+   /*border-radius: 50%;*/
    border: none;
-   color: white;
-   padding: 15px 32px;
+   /*color: white;*/
+   padding: 5px;
    text-align: center;
    text-decoration: none;
    display: block;
-   font-size: 40px;
+   font-size: 30px;
    position: absolute;
-   width: 500px;
+   width: 300px;
    margin: -25px 0 0 -150px;
    left: 20%;
    top: 48%;
    cursor: pointer;
  }
 
- .background_image {
-    background: url('http://www.pixelstalk.net/wp-content/uploads/2016/07/HD-Texas-Longhorns-Football-Wallpaper.jpg');
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
+ /*.signup {
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 29px;
+  -webkit-box-shadow: 0px 0px 30px #cf8121;
+  -moz-box-shadow: 0px 0px 30px #cf8121;
+  box-shadow: 0px 0px 30px #cf8121;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+  background: #c28100;
+  border: solid #1f628d 0px;
+  text-decoration: none;
+}*/
 
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
+.signup:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  text-decoration: none;
+}
 
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
- }
+
+.background_image {
+  background: url('http://www.pixelstalk.net/wp-content/uploads/2016/07/HD-Texas-Longhorns-Football-Wallpaper.jpg');
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title {
+  text-decoration: none;
+  color: #666;
+  font-style: normal;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 100px;
+  position: absolute;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,.5)), to(rgba(0,0,0,1)));
+}
+
+.title:after {
+  content : 'Dokkan Football';
+  color: #d6d6d6;
+  text-shadow: 0 1px 0 white;
+}

@@ -1,6 +1,7 @@
 <% if current_user %>
   <h2>Welcome to Dokkan, <%= current_user.username %>!<h2>
 <% else %>
+  <h1 class="title"></h1>
   <div class="background_image"></div>
   <form method="get" action="/signup" class="button" id="signup">
     <input value="Create an Account!" type="submit" class="signup" />
