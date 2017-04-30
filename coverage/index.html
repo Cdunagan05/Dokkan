@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-04-30T13:34:25-06:00">2017-04-30T13:34:25-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-04-30T15:04:55-06:00">2017-04-30T15:04:55-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -24,8 +24,8 @@
     (<span class="covered_percent"><span class="red">67.27%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.92
+       <span class="green">
+         1.06
        </span>
     </span> hits/line)
   </h2>
@@ -77,7 +77,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>2.8</td>
+        <td>3.4</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -173,7 +173,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.28
+         1.53
        </span>
     </span> hits/line)
   </h2>
@@ -205,7 +205,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>2.8</td>
+        <td>3.4</td>
       </tr>
       
       <tr>
@@ -225,7 +225,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -679,8 +679,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="7">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="13" data-linenumber="7">
+          <span class="hits">13</span>
           
           <code class="ruby">    @current_user ||= User.find(session[:user_id]) if session[:user_id]</code>
         </li>
@@ -799,32 +799,32 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="7">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="7">
+          <span class="hits">3</span>
           
           <code class="ruby">    user = User.find_by_username(params[:username])</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
           
           <code class="ruby">    if user &amp;&amp; user.authenticate(params[:password])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
           <code class="ruby">      session[:user_id] = user.id</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
           <code class="ruby">      flash[:success] = &quot;Successfully logged in!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
           <code class="ruby">      redirect_to :root</code>
         </li>
