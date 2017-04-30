@@ -10,9 +10,9 @@ RSpec.describe "When a user visits the site" do
 
       expect(current_path).to eq(login_path)
 
-      fill_in "user_username", with: "mouse"
-      fill_in "user_email", with: "mouse@gmail.com"
-      fill_in "user_password", with: "colorado"
+      fill_in "username", with: "mouse"
+      fill_in "email", with: "mouse@gmail.com"
+      fill_in "password", with: "colorado"
 
       click_on "Login"
 
