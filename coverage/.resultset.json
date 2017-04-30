@@ -17,6 +17,49 @@
         1,
         null
       ],
+      "/Users/chasedunagan/projects/dokkan/app/controllers/users_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/models/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/chasedunagan/projects/dokkan/app/channels/application_cable/channel.rb": [
         0,
         0,
@@ -38,13 +81,8 @@
         0,
         0,
         0
-      ],
-      "/Users/chasedunagan/projects/dokkan/app/models/application_record.rb": [
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1493509311
+    "timestamp": 1493511841
   }
 }

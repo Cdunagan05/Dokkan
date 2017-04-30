@@ -16,7 +16,7 @@ RSpec.describe 'As a guest' do
       fill_in "user_password", with: "texas"
       fill_in "user_password_confirmation", with: "texas"
 
-      click_on "Create Account"
+      click_on "Create User"
 
       expect(current_path).to eq(root_path)
       expect(page).to have_content("Welcome to Dokkan, Cdun!")
