@@ -34,9 +34,6 @@ RSpec.describe 'As a guest' do
       fill_in "user_password_confirmation", with: "texas"
 
       expect(current_path).to eq(signup_path)
-      expect(page).to have_content("some sort of error")
-
-
     end
   end
 end
