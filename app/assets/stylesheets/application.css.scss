@@ -14,6 +14,43 @@
  *= require_self
  */
 
+
+ .login {
+   /*background-color: brown;*/
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 29px;
+  -webkit-box-shadow: 0px 0px 30px #cf8121;
+  -moz-box-shadow: 0px 0px 30px #cf8121;
+  box-shadow: 0px 0px 30px #cf8121;
+  font-family: Arial;
+  color: #ffffff;
+  background: #c28100;
+
+
+   /*border-radius: 50%;*/
+   border: none;
+   /*color: white;*/
+   padding: 5px;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 30px;
+   position: absolute;
+   width: 300px;
+   margin: -25px 0 0 -150px;
+   left: 20%;
+   top: 57%;
+   cursor: pointer;
+ }
+
+ .login:hover {
+   background: #3cb0fd;
+   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+   background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+   text-decoration: none;
+ }
  .signup {
    /*background-color: brown;*/
   -webkit-border-radius: 29;
@@ -42,22 +79,6 @@
    top: 48%;
    cursor: pointer;
  }
-
- /*.signup {
-  -webkit-border-radius: 29;
-  -moz-border-radius: 29;
-  border-radius: 29px;
-  -webkit-box-shadow: 0px 0px 30px #cf8121;
-  -moz-box-shadow: 0px 0px 30px #cf8121;
-  box-shadow: 0px 0px 30px #cf8121;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 20px;
-  background: #c28100;
-  border: solid #1f628d 0px;
-  text-decoration: none;
-}*/
 
 .signup:hover {
   background: #3cb0fd;
@@ -101,3 +122,7 @@
   color: #d6d6d6;
   text-shadow: 0 1px 0 white;
 }
+
+
+  @import "bootstrap-sprockets";
+  @import "bootstrap";

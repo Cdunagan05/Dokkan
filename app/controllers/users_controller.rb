@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def possible_errors
-    {"has already been taken" => "Someone else already has that username or password!",
+    {"has already been taken" => "Someone else already has that username or email!",
      "doesn't match Password" => "Your passwords do not match!"}
   end
 end
