@@ -9,7 +9,16 @@
   </head>
 
   <body>
-
+    <% if current_user %>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <p class="navbar-text">Dokkan</p>
+          <p><a data-method="delete" href="/logout" class="navbar-link navbar-right">Logout</a></p>
+       </div>
+      </div>
+    </nav>
+    <% end %>
     <%= yield %>
   </body>
 </html>
