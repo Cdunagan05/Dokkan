@@ -49,5 +49,18 @@ RSpec.describe 'As a guest' do
 
       expect(current_path).to eq(signup_path)
     end
+
+    it "cannot signup if passwords do not match" do
+      visit root_path
+
+      click_on "Create an Account!"
+
+      fill_in "user_username", with: "cdunagan"
+      fill_in "user_email", with: "texasexes@gmail.com"
+      fill_in "user_password", with: "texas"
+      fill_in "user_password_confirmation", with: "California"
+
+      expect(current_path).to eq(signup_path)
+    end
   end
 end
