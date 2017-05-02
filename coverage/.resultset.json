@@ -9,6 +9,9 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
         null
       ],
       "/Users/chasedunagan/projects/dokkan/app/models/application_record.rb": [
@@ -129,6 +132,6 @@
         0
       ]
     },
-    "timestamp": 1493694909
+    "timestamp": 1493696876
   }
 }
