@@ -10,12 +10,12 @@ RSpec.describe User, type: :model do
 
   it {should have_many(:cards).through(:user_cards)}
 
-  # it "adds a card to a user" do
-  #   user = User.create(username: "Tex", email: "tex@gmail.com", password: "tex")
-  #
-  #   user.buys_card
-  #
-  #   expect(user.cards.count).to eq(1)
-  #   expect(user.cards.first.player).to eq("Emmitt Smith")
-  # end
+  it "adds a card to a user" do
+    user = User.create(username: "Tex", email: "tex@gmail.com", password: "tex")
+
+    user.buys_card
+
+    expect(user.cards.count).to eq(1)
+    expect(user.cards.first.player).to eq("Emmitt Smith")
+  end
 end
