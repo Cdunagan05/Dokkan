@@ -5,6 +5,23 @@
         1,
         null
       ],
+      "/Users/chasedunagan/projects/dokkan/app/models/card.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/chasedunagan/projects/dokkan/app/models/user_card.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/chasedunagan/projects/dokkan/app/models/user.rb": [
         1,
         1,
@@ -12,9 +29,7 @@
         1,
         1,
         1,
-        null
-      ],
-      "/Users/chasedunagan/projects/dokkan/app/models/application_record.rb": [
+        null,
         1,
         1,
         null
@@ -114,6 +129,6 @@
         0
       ]
     },
-    "timestamp": 1493683794
+    "timestamp": 1493694909
   }
 }
