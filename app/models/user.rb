@@ -8,7 +8,8 @@ class User < ApplicationRecord
   has_many :user_cards
   has_many :cards, through: :user_cards
 
-  # def buys_card
-  #   cards.
-  # end
+  def buys_card
+    new_card = Card.random_card
+    cards << new_card
+  end
 end

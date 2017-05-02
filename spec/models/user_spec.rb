@@ -12,6 +12,7 @@ RSpec.describe User, type: :model do
 
   it "adds a card to a user" do
     user = User.create(username: "Tex", email: "tex@gmail.com", password: "tex")
+    Card.create(player: "Emmitt Smith")
 
     user.buys_card
 
