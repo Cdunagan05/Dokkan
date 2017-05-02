@@ -10,17 +10,54 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170429235451) do
+ActiveRecord::Schema.define(version: 20170502030502) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "amounts", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "dollars"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_amounts_on_user_id", using: :btree
+  end
+
+  create_table "cards", force: :cascade do |t|
+    t.string   "player"
+    t.integer  "rarity"
+    t.integer  "offense"
+    t.integer  "defense"
+    t.integer  "special"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_cards_on_user_id", using: :btree
+  end
+
+  create_table "user_cards", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "card_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["card_id"], name: "index_user_cards_on_card_id", using: :btree
+    t.index ["user_id"], name: "index_user_cards_on_user_id", using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
     t.string   "email"
     t.string   "password_digest"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.integer  "dollars",         default: 200
+    t.integer  "card_id"
+    t.index ["card_id"], name: "index_users_on_card_id", using: :btree
   end
 
+  add_foreign_key "amounts", "users"
+  add_foreign_key "cards", "users"
+  add_foreign_key "user_cards", "cards"
+  add_foreign_key "user_cards", "users"
+  add_foreign_key "users", "cards"
 end

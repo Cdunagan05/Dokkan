@@ -4,4 +4,12 @@ class User < ApplicationRecord
   validates :password, presence: true
   validates_confirmation_of :password
   has_secure_password
+
+  has_many :user_cards
+  has_many :cards, through: :user_cards
+
+  def buys_card
+    new_card = Card.random_card
+    cards << new_card
+  end
 end
