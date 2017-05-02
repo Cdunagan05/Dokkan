@@ -12,6 +12,11 @@
         null,
         1,
         1,
+        null,
+        1,
+        null,
+        1,
+        null,
         null
       ],
       "/Users/chasedunagan/projects/dokkan/app/models/application_record.rb": [
@@ -35,6 +40,10 @@
         null,
         1,
         1,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/chasedunagan/projects/dokkan/app/controllers/home_controller.rb": [
@@ -132,6 +141,6 @@
         0
       ]
     },
-    "timestamp": 1493696876
+    "timestamp": 1493699517
   }
 }
