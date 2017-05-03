@@ -10,6 +10,12 @@ class User < ApplicationRecord
 
   def buys_card
     new_card = Card.random_card
+    update_dollars
     cards << new_card
+  end
+
+  def update_dollars
+    dollars_left = dollars - 50
+    update(dollars: dollars_left)
   end
 end
