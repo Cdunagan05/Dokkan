@@ -19,4 +19,13 @@ RSpec.describe User, type: :model do
     expect(user.cards.count).to eq(1)
     expect(user.cards.first.player).to eq("Emmitt Smith")
   end
+
+  it "subtracts money when user buys card" do
+    user = User.create(username: "Tex", email: "tex@gmail.com", password: "tex")
+    Card.create(player: "Emmitt Smith")
+
+    user.buys_card
+
+    expect(user.dollars).to eq(150)
+  end
 end
