@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Card.create(player: "Emmitt Smith", rarity: 3, offense: 92, defense: 30, special: 0)
+Card.create(player: "Adrian Peterson", rarity: 2, offense: 95, defense: 30, special: 0)
+Card.create(player: "Earl Campbell", rarity: 3, offense: 97, defense: 30, special: 0)
+Card.create(player: "Doug Martin", rarity: 1, offense: 77, defense: 30, special: 0)
+Card.create(player: "Cam Newton", rarity: 2, offense: 87, defense: 30, special: 1)
+Card.create(player: "Joe Montana", rarity: 3, offense: 99, defense: 30, special: 1)
+Card.create(player: "Sam Bradford", rarity: 1, offense: 75, defense: 30, special: 1)
+Card.create(player: "Michael Irvin", rarity: 3, offense: 95, defense: 30, special: 2)
+Card.create(player: "Miles Austin", rarity: 0, offense: 68, defense: 30, special: 2)
+Card.create(player: "Earl Thomas", rarity: 2, offense: 30, defense: 96, special: 3)
+Card.create(player: "Orlando Scandrick", rarity: 0, offense: 30, defense: 69, special: 3)
