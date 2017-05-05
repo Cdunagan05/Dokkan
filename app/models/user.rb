@@ -11,7 +11,11 @@ class User < ApplicationRecord
   def buys_card
     new_card = Card.random_card
     update_dollars
-    cards << new_card
+    if dollars > (-1)
+      cards << new_card
+    else
+      false
+    end
   end
 
   def update_dollars
