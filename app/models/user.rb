@@ -10,16 +10,17 @@ class User < ApplicationRecord
 
   def buys_card
     new_card = Card.random_card
-    update_dollars
-    if dollars > (-1)
+    if update_dollars
       cards << new_card
-    else
-      false
     end
   end
 
   def update_dollars
     dollars_left = dollars - 50
-    update(dollars: dollars_left)
+    if dollars_left > (-1)
+      update(dollars: dollars_left)
+    else
+      false
+    end
   end
 end
