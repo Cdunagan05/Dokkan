@@ -28,4 +28,14 @@ RSpec.describe User, type: :model do
 
     expect(user.dollars).to eq(150)
   end
+
+  it "cannot buy card if user does not have enough money" do
+    user = User.create(username: "Tex", email: "tex@gmail.com", password: "tex", dollars: 20)
+    Card.create(player: "Emmitt Smith")
+
+    user.buys_card
+
+    expect(user.cards.count).to eq(0)
+    expect(user.dollars).to eq(20)
+  end
 end
