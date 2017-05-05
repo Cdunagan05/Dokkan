@@ -36,6 +36,6 @@ RSpec.describe User, type: :model do
     user.buys_card
 
     expect(user.cards.count).to eq(0)
-    expect(user.dollars).to eq(150)
+    expect(user.dollars).to eq(20)
   end
 end
